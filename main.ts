@@ -7,7 +7,19 @@
 import { start } from "$fresh/server.ts";
 import manifest from "./fresh.gen.ts";
 
-import twindPlugin from "$fresh/plugins/twind.ts";
-import twindConfig from "./twind.config.ts";
+const decoder = new TextDecoder("utf-8");
+const pico = Deno.readFileSync("./pico/pico.min.css");
 
-await start(manifest, { plugins: [twindPlugin(twindConfig)] });
+await start(manifest, {
+  plugins: [
+    {
+      name: "globalCss",
+      render(_ctx) {
+        _ctx.render();
+        return {
+          styles: [{ cssText: decoder.decode(pico), id: "_global" }],
+        };
+      },
+    },
+  ],
+});

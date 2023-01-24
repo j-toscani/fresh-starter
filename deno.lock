@@ -123,5 +123,14 @@
     "https://esm.sh/v104/twind@0.16.17/deno/twind.js": "789e23dc5f1091ef9d83c8c98e286a067e79c50ae5d24db590a919907317320a",
     "https://esm.sh/v104/twind@0.16.17/sheets/sheets.d.ts": "7ae83945ce613eb25afa107390ab2028cbd1aa6fa221e172ae9cbc8a97afd151",
     "https://esm.sh/v104/twind@0.16.17/twind.d.ts": "95edc427d16b49bd0ca94351c9ffb4bc141fbf391192b464ef91f938cd20e669"
+  },
+  "npm": {
+    "specifiers": { "@picocss/pico": "@picocss/pico@1.5.6" },
+    "packages": {
+      "@picocss/pico@1.5.6": {
+        "integrity": "sha512-9R+OdtMuHijKa7AQKBrng/1Q/Cd3BnEigYJXmOxI10Eka2qGGDa4b0hua8UeYu01BTtAiO70K7CQuHffU4YXGA==",
+        "dependencies": {}
+      }
+    }
   }
 }
